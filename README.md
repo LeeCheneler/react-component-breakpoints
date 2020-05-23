@@ -17,9 +17,9 @@ yarn add react-component-breakpoints
 A simple example of a component reacting to its size changes.
 
 ```js
-import { useBreakpoints } from "../main";
+import { useBreakpoints } from "react-component-breakpoints";
 
-const Component = () => {
+const Example = () => {
   const [ref, br, [wide, widest]] = useBreakpoints(500, 900);
 
   const breakpointValue = br("default", "wide", "widest");
