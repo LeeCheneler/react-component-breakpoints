@@ -1,4 +1,4 @@
-# react-compoennt-breakpoints
+# react-component-breakpoints
 
 React to component level breakpoints.
 
