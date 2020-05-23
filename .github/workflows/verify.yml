@@ -16,13 +16,10 @@ jobs:
         run: yarn
 
       - name: Build
-        working-directory: packages/cli
         run: yarn build
 
       - name: Typecheck
-        working-directory: packages/cli
         run: yarn typecheck
 
       - name: Lint
-        working-directory: packages/cli
         run: yarn lint
