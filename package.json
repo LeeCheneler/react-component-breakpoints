@@ -1,0 +1,46 @@
+{
+  "name": "react-component-breakpoints",
+  "version": "1.0.0",
+  "license": "MIT",
+  "private": false,
+  "main": "dist/main.cjs.js",
+  "module": "dist/main.esm.js",
+  "types": "dist/main.d.ts",
+  "sideEffects": false,
+  "author": {
+    "name": "Lee Cheneler"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leecheneler/react-component-breakpoints.git"
+  },
+  "bugs": {
+    "url": "https://github.com/leecheneler/react-component-breakpoints/issues"
+  },
+  "keywords": [
+    "react",
+    "breakpoints",
+    "resize observer"
+  ],
+  "scripts": {
+    "build": "ts-engine build --library",
+    "lint": "ts-engine lint",
+    "test": "ts-engine test",
+    "typecheck": "ts-engine typecheck --emit"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.8.0",
+    "@testing-library/react": "^10.0.4",
+    "@ts-engine/babel-preset-react": "^1.5.2",
+    "@ts-engine/cli": "^1.5.2",
+    "@ts-engine/eslint-config": "^1.5.2",
+    "@types/react": "^16.9.35"
+  },
+  "peerDependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "dependencies": {
+    "resize-observer-polyfill": "^1.5.1"
+  }
+}
