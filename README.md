@@ -1,5 +1,7 @@
 # react-component-breakpoints
 
+![Verify](https://github.com/LeeCheneler/react-component-breakpoints/workflows/Verify/badge.svg)
+
 React to component level breakpoints.
 
 ## Why
