@@ -1,0 +1,28 @@
+name: Publish
+
+on:
+  push:
+    tags:
+      - release-*
+
+jobs:
+  pipeline:
+    if: github.event.base_ref == 'refs/heads/master'
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Install
+        run: yarn
+
+      - name: Build
+        run: yarn build
+
+      - name: Configure NPM for Publish
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc
+
+      - name: Publish
+        run: npm publish --tag latest --access public
