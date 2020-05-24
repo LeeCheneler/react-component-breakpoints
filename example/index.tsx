@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { useBreakpoints } from "../src/main";
+import { useBreakpoints } from "../src/main.ts";
 
 interface CardProps {
   children: React.ReactNode;
