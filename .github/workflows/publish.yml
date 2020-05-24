@@ -19,7 +19,7 @@ jobs:
       - name: Build
         run: yarn build
 
-      - name: Build
+      - name: Typecheck
         run: yarn typecheck
 
       - name: Configure NPM for Publish
