@@ -24,6 +24,7 @@
   ],
   "scripts": {
     "build": "ts-engine build --library",
+    "example:build": "parcel build example/index.html",
     "example:start": "parcel example/index.html",
     "lint": "ts-engine lint",
     "test": "ts-engine test",
@@ -36,15 +37,15 @@
     "@ts-engine/cli": "^1.5.2",
     "@ts-engine/eslint-config": "^1.5.2",
     "@types/react": "^16.9.35",
-    "parcel-bundler": "^1.12.4"
+    "parcel-bundler": "^1.12.4",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
   },
   "peerDependencies": {
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   },
   "dependencies": {
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
     "resize-observer-polyfill": "^1.5.1"
   }
 }

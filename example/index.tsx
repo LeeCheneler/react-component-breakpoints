@@ -2,6 +2,24 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { useBreakpoints } from "../src/main";
 
+interface CardProps {
+  children: React.ReactNode;
+}
+
+const Card = (props: CardProps) => {
+  return (
+    <div
+      style={{
+        backgroundColor: "hotpink",
+        color: "white",
+        padding: "1rem",
+      }}
+    >
+      {props.children}
+    </div>
+  );
+};
+
 const Wrapper = () => {
   const [ref, br] = useBreakpoints(400, 800, 1200);
 
@@ -16,20 +34,28 @@ const Wrapper = () => {
 
   return (
     <div
-      ref={ref}
       style={{
-        boxSizing: "border-box",
-        display: "flex",
-        flexWrap: "wrap",
-        marginLeft: "-1rem",
-        marginTop: "-1rem",
+        fontFamily: "Arial",
       }}
     >
-      {new Array(10).fill(null).map((_, i) => (
-        <div key={i} style={itemStyle}>
-          {width}
-        </div>
-      ))}
+      <h1>react-component-breakpoints example</h1>
+      <div
+        ref={ref}
+        style={{
+          boxSizing: "border-box",
+          display: "flex",
+          flexWrap: "wrap",
+          marginLeft: "-1rem",
+          marginTop: "-1rem",
+          textAlign: "center",
+        }}
+      >
+        {new Array(10).fill(null).map((_, i) => (
+          <div key={i} style={itemStyle}>
+            <Card>{width}</Card>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
