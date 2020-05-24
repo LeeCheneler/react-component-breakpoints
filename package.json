@@ -24,6 +24,7 @@
   ],
   "scripts": {
     "build": "ts-engine build --library",
+    "example:start": "parcel example/index.html",
     "lint": "ts-engine lint",
     "test": "ts-engine test",
     "typecheck": "ts-engine typecheck --emit"
@@ -34,13 +35,16 @@
     "@ts-engine/babel-preset-react": "^1.5.2",
     "@ts-engine/cli": "^1.5.2",
     "@ts-engine/eslint-config": "^1.5.2",
-    "@types/react": "^16.9.35"
+    "@types/react": "^16.9.35",
+    "parcel-bundler": "^1.12.4"
   },
   "peerDependencies": {
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   },
   "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
     "resize-observer-polyfill": "^1.5.1"
   }
 }
