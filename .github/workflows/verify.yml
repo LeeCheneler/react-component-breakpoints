@@ -16,13 +16,17 @@ jobs:
         run: yarn
 
       - name: Build
+        working-directory: packages/react-component-breakpoints
         run: yarn build
 
       - name: Typecheck
+        working-directory: packages/react-component-breakpoints
         run: yarn typecheck
 
       - name: Lint
+        working-directory: packages/react-component-breakpoints
         run: yarn lint
 
       - name: Test
+        working-directory: packages/react-component-breakpoints
         run: yarn test

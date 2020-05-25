@@ -1,0 +1,24 @@
+{
+  "name": "example",
+  "version": "1.0.0",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build": "webpack --mode production",
+    "start": "webpack-dev-server --port 3000"
+  },
+  "devDependencies": {
+    "@ts-engine/babel-preset-react": "^1.5.3",
+    "@types/react": "^16.9.35",
+    "babel-loader": "^8.1.0",
+    "html-webpack-plugin": "^4.3.0",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-component-breakpoints": "^1.0.0",
+    "react-dom": "^16.13.1"
+  }
+}

@@ -17,9 +17,11 @@ jobs:
         run: yarn
 
       - name: Build
+        working-directory: packages/react-component-breakpoints
         run: yarn build
 
       - name: Typecheck
+        working-directory: packages/react-component-breakpoints
         run: yarn typecheck
 
       - name: Configure NPM for Publish
@@ -28,4 +30,5 @@ jobs:
         run: echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc
 
       - name: Publish
+        working-directory: packages/react-component-breakpoints
         run: npm publish --tag latest --access public
