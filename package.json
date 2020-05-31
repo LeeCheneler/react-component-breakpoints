@@ -1,6 +1,12 @@
 {
   "private": true,
-  "workspaces":{
-    "packages": ["packages/**"]
+  "workspaces": {
+    "packages": [
+      "packages/**"
+    ]
+  },
+  "devDependencies": {
+    "@ts-engine/eslint-config": "^1.6.1",
+    "@ts-engine/eslint-config-react": "^1.6.1"
   }
 }
