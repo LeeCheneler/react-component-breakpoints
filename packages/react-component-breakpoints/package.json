@@ -24,8 +24,6 @@
   ],
   "scripts": {
     "build": "ts-engine build --library --react",
-    "example:build": "webpack --mode production",
-    "example:start": "webpack-dev-server --port 3000",
     "lint": "ts-engine lint --react",
     "test": "ts-engine test --react",
     "typecheck": "ts-engine typecheck --emit"
